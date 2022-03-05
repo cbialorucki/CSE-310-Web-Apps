@@ -1,13 +1,29 @@
 {% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include "./shared_head.html" %}
+    </head>
+    <body>
+        {% include "./header.html" %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+        <main class="homeMain">
+            {% if latest_question_list %}
+                <ul>
+                    {% for question in latest_question_list %}
+                    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No polls are available.</p>
+            {% endif %}
+        </main>
+        
+        <audio autoplay loop>
+            <source src="https://archive.org/download/mainthemewiieverybodyvoteschannelmusic/Main%20Theme%20-%20Wii%20Everybody%20Votes%20Channel%20Music.mp3">
+        </audio>
+        {% include "./footer.html" %}
+    </body>
+</html>
 
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+

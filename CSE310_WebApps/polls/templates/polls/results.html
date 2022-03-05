@@ -1,9 +1,26 @@
-<h1>{{ question.question_text }}</h1>
+{% load static %}
+{% load humanize %}
+<html>
+    <head>
+        {% include "./shared_head.html" %}
+    </head>
+    <body>
+        {% include "./header.html" %}
 
-<ul>
-{% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-{% endfor %}
-</ul>
+        <h1>{{ question.question_text }}</h1>
 
-<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} -- {{ choice.votes|intcomma }} vote{{ choice.votes|pluralize }}</li>
+        {% endfor %}
+        </ul>
+
+        <audio autoplay loop>
+            <source src="https://archive.org/download/everybody-votes-channel-soundtrack/Everybody%20Votes%20Channel%20-%20Poll%20Results%20%28Wii%20Rip%29.mp3#t=21">
+        </audio>
+        {% include "./footer.html" %}
+    </body>
+</html>
+
+
+

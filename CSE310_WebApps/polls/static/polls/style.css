@@ -1,7 +1,57 @@
-li a {
-    color: green;
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background: white url("images/background.jpg") no-repeat;
+ul{
+    text-align: center;
+}
+
+header nav{
+    text-align: center;
+    background-color: #20c6cd;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer{
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p, footer a{
+    padding: 6px;
+}
+
+ul li{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 80%;
+    margin: 32px auto;
+    padding: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, form{
+    text-align: center;
+    padding: 8px;
+}
+
+form input{
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
 }
