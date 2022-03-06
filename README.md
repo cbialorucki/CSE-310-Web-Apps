@@ -13,7 +13,7 @@ I wrote this web app in order to learn about Django. Unfortunately, I did not sp
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walk through of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/yz0svaV2i5s)
 
 # Web Pages
 
