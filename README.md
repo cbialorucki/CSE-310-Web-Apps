@@ -11,7 +11,7 @@ NOTE: You will need Python and Django installed for this to work.
 
 I wrote this web app in order to learn about Django. Unfortunately, I did not spend as much time as I would have liked. I will continue to work on other Django projects to get a better grasp on how to use it. I come away from this project feeling that Django tries so hard to abstract away web fundamentals that it makes it harder to understand.
 
-[Software Demo Video](https://youtu.be/yz0svaV2i5s)
+[Software Demo Video](https://youtu.be/4Dip9otV8IE)
 
 # Web Pages
 
